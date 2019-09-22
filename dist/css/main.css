@@ -7,14 +7,24 @@
 
 .home {
   height: 100%;
-  padding-top: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 10vh;
   overflow: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/iam.jpg") 40% 50%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/iam.jpg") 40% 50%;
   background-size: cover;
 }
 
@@ -192,8 +202,8 @@
 .about__bio-image {
   height: 50vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/bg.png");
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/bg.png");
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,7 +234,7 @@
 }
 
 .about .jobs {
-  width: 60vw;
+  width: 80vw;
   margin: 2rem auto 0 auto;
   display: -ms-grid;
   display: grid;
@@ -239,11 +249,12 @@
   border-bottom: 5px solid #ff652f;
 }
 
-.about .jobs h2, .about .jobs h3 {
+.about .jobs h2,
+.about .jobs h3 {
   margin: 0.5rem 0;
 }
 
-.about .jobs h6 {
+.about .jobs h4 {
   margin: 0.3rem 0;
 }
 
@@ -257,11 +268,6 @@
           flex-direction: column;
 }
 
-.about footer {
-  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-          transform: rotate(90deg) translate(-3rem, -5rem);
-}
-
 .projects {
   padding-bottom: 2rem;
 }
@@ -269,8 +275,8 @@
 .projects__bio-image {
   height: 30vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/bg.png");
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/bg.png");
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,27 +378,28 @@
           flex-direction: column;
 }
 
-.projects footer {
-  -webkit-transform: rotate(90deg) translate(-3rem, -5rem);
-          transform: rotate(90deg) translate(-3rem, -5rem);
-}
-
 .contact {
   height: 100%;
-  padding-top: 40vh;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 10vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/model-1.jpg") center top;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/model-1.jpg") center top;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0.3))), url("../img/iam.jpg") 40% 50%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/iam.jpg") 40% 50%;
   background-size: cover;
 }
 
@@ -415,7 +422,19 @@
   margin-top: 2rem;
 }
 
-@media screen and (min-width: 768px) {
+@media (max-width: 767px) {
+  .home {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0;
+  }
+  .about .social-icons {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
   .menu-btn {
     visibility: hidden;
   }
@@ -456,7 +475,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .projects__items {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -467,7 +486,7 @@
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media (min-width: 1600px) {
   .projects__bio-image {
     height: 50vh;
   }
@@ -483,7 +502,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 400;
 }
 
@@ -522,15 +542,5 @@ main .social-icons a {
 
 main .social-icons a:hover {
   color: #ff652f;
-}
-
-footer {
-  font-size: 1rem;
-  position: fixed;
-  bottom: 0.4rem;
-  right: 1rem;
-  text-align: right;
-  padding: 1rem;
-  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

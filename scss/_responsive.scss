@@ -1,3 +1,14 @@
+@include media-sm {
+  .home {
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .about .social-icons {
+    display: none;
+  }
+}
+
 @include media-md {
   .menu-btn {
     visibility: hidden;
@@ -60,7 +71,7 @@
 }
 
 @include media-xl {
-    .projects__bio-image {
-      height: 50vh;
-    }
+  .projects__bio-image {
+    height: 50vh;
   }
+}

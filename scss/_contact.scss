@@ -1,6 +1,10 @@
 .contact {
   height: 100%;
-  padding-top: 40vh;
+  display: flex;
+  padding-top: 10vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -10,7 +14,7 @@
       rgba($primary-color, 0.9),
       rgba($primary-color, 0.3)
     ),
-    url("../img/model-1.jpg") center top;
+    url("../img/iam.jpg") 40% 50%;
   background-size: cover;
 
   h2 {

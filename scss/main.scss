@@ -16,7 +16,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 400;
 }
 
@@ -54,14 +55,4 @@ main {
       }
     }
   }
-}
-
-footer {
-  font-size: 1rem;
-  position: fixed;
-  bottom: 0.4rem;
-  right: 1rem;
-  text-align: right;
-  padding: 1rem;
-  color: set-text-color($primary-color);
 }
